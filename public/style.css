@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Noto+Sans&family=Open+Sans:wght@600&family=RocknRoll+One&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+    font-family: 'Noto Sans','Open Sans','RocknRoll One', sans-serif;
+    font-weight: bold;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.subcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.subcontainer > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 35px;
+    border-radius: 20px;
+}
+
+.createList > div, .inputList > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.createList > div > * , .inputList > div > * {
+    margin: 20px 0px;
+    max-width: 100%;
+}
+
+#btnAddList, #btnAddTask, #btnGetTasks {
+    max-width: 80%;
+    min-width: 50%;
+    height: 40px;
+    margin: 20px auto;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #3A4750;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+#btnGetTasks {
+    display: block;
+    margin: 20px auto;
+    min-width: 35%;
+}
+
+.displayList {
+    display: flex;
+    flex-direction: column;
+    min-width: 65%;
+}
+
+.taskPlate {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+
+#displayListName {
+    margin: 20px 0px;
+}
+
