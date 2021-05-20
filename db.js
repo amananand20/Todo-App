@@ -37,23 +37,6 @@ Task.belongsTo(List);
     console.log("Denied to add Default List twice...");
 });
 
-// db.sync()
-//     .then(() => {
-//         console.log("Database Synced Successfully..");
-//     })
-//     .catch((err) => {
-//         console.error(err);
-//     })
-
-// List.create({
-//     listName: "Default List"
-// }).then((list) => {
-//     console.log(`created ${list.listName} successfully`);
-// })
-//     .catch((err) => {
-//         console.log("could not create the default list");
-//     })
-
 exports = module.exports = {
     Task,
     List
